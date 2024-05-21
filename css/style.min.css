@@ -648,6 +648,16 @@ textarea {
   margin-top: 30px;
 }
 
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.block-header a {
+  color: #1e1e1e;
+}
+
 .factory-intro__row {
   display: flex;
   gap: 20px;
