@@ -1283,6 +1283,9 @@ body {
   .content {
     padding-top: 110px;
   }
+  .header {
+    padding: 12px 0px;
+  }
   .header.active {
     padding: 12px 0px;
   }
@@ -1293,6 +1296,16 @@ body {
     order: 10;
   }
   .header.active .header__logo {
+    width: 160px;
+    height: 80px;
+  }
+  .header .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 10;
+  }
+  .header .header__logo {
     width: 160px;
     height: 80px;
   }
