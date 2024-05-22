@@ -740,6 +740,57 @@ textarea {
   margin-bottom: 0px;
 }
 
+.dialogbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.3);
+}
+.dialogbox__inner {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  height: 100%;
+  width: 100%;
+}
+.dialogbox__window {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 80px 50px 41px;
+  width: 100%;
+  max-width: 854px;
+  background: #fff;
+}
+.dialogbox__window h2 {
+  text-align: center;
+  font-size: 26px;
+}
+.dialogbox__window .btn {
+  margin: 0 auto;
+}
+.dialogbox__close {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 32px;
+  width: 22px;
+  height: 22px;
+  background: center center no-repeat;
+  background-size: contain;
+  background-image: url(../img/svgicons/close.svg);
+  cursor: pointer;
+}
+
 .intro {
   height: calc(100vh - 176px);
 }
